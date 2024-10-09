@@ -1,0 +1,117 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.left-pane, .right-pane {
+    width: 45%;
+    padding: 20px;
+}
+
+.left-pane {
+    background-color: #eef2f7;
+    border-right: 1px solid #ccc;
+}
+
+.right-pane {
+    text-align: center;
+}
+
+h2 {
+    color: #ff6363;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#task-list li:hover {
+    transform: scale(1.02);
+}
+
+#task-list li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#task-list li.low {
+    border-left: 4px solid green;
+}
+
+#task-list li.medium {
+    border-left: 4px solid orange;
+}
+
+#task-list li.high {
+    border-left: 4px solid red;
+}
+
+button.delete-btn {
+    background-color: transparent;
+    border: none;
+    color: #ff6363;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+button.edit-btn {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    color: #333;
+}
+
+form {
+    margin-top: 30px;
+}
+
+input, select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff6363;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4444;
+}
