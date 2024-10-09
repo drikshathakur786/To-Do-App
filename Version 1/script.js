@@ -4,12 +4,9 @@ document.getElementById('task-form').addEventListener('submit', function(event) 
 
     if (taskText) {
         const li = document.createElement('li');
-        li.innerHTML = `<input type="checkbox"> ${taskText} <button class="delete-btn">×</button>`;
-        
+        li.innerHTML = `<input type="checkbox"> ${taskText} <button class="delete-btn">×</button>`;  
         document.getElementById('task-list').appendChild(li);
-
         document.getElementById('task-input').value = '';
-
         li.querySelector('.delete-btn').addEventListener('click', function() {
             li.remove();
         });
